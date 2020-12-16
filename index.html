@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	
+	<title>MyFisrtAssignment</title>
+
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+
+	<script src='index.js'></script>
+</head>
+<body>
+		<h1 class="Collector" style="color: rgb(255, 255, 255); font-size: 50px;">Data Collector Form</h1>
+		<form id="firstForm" method="GET">	
+		<div>	
+				<label id="myLabel">First Name:</label>
+				<input type="text" name="firstName" id="firstName" required=""><br><br>
+		</div>
+	
+		<div>
+				 <label>Last Name:</label>
+				 <input type="text" name="lastName" id="lastName" required=""><br><br>
+		</div>
+	
+		<div>
+				<label>E-mail:</label>
+				<input type="email" name="eMail" id="eMail" required=""><br><br>
+		</div>
+		<div>
+			<label>Password:</label>
+			<input type="password" name="mypassword" id="mypassword" required=""><br><br>
+	</div>
+		<div>
+						<label>Select Gender:</label>
+						<select id="gender"> 
+							<option value="Male">Male </option>
+							<option value="Female">Female</option>
+						</select><br><br>
+		</div>
+		<div>
+				<label id="myEducation">Select Your Education:</label>
+				<input type="radio" name="myMatric" value="matric" class="education">Matric
+				<input type="radio"name="myMatric" value="inter" class="education">Inter
+				<input type="radio"name="myMatric"value="BSCS" class="education">BSCS<br><br>
+			
+		 </div>
+		 <div>
+			 <label id="myHobbies">Select Your Hobbies:</label>
+			 <input type="checkbox" value="studying"> Studying
+			 <input type="checkbox" value="playing"> Playing
+			 <input type="checkbox" value="watching"> Watching<br><br>
+		 </div>
+		<div>
+				<label>Phone Number:</label>
+				<input type="number" name="myNumber" id="myNumber" required=""><br><br>
+		</div>
+		<div>
+				<label id="sumission">Submission Date:</label>
+				<input type="date" name="submissionDate" id="submissionDate"><br><br>
+		</div>
+		<div>
+				<label>Submission Time:</label>
+				<input type="time" name="submissionTime" id="submissionTime"><br><br>
+		</div>
+	<div>	
+<Button type="submit" name="submit" onclick="FormSubmit()" style="background-color: rgb(25, 0, 255);cursor: pointer; color: white; width: 100px; height: 30px;">Verify First!!	
+</Button>	
+		</div>
+		</form>
+		
+	<div id="dynamicTable" ></div>
+	<center><input type="submit" value="submit" style="background-color: rgb(230, 4, 4); color: white; width: 100px; height: 30px; cursor: pointer;"><br></center>	
+</body>
+</html>
